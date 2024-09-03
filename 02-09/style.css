@@ -1,0 +1,25 @@
+
+/* Estilos gerais para minha página */
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* Estilos para a tag h1 */
+h1 {
+    color: rgb(0, 191, 255); /* Tudo que tiver a etiqueta (tag) h1 vai ter esta cor */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Troca a fonte para a que eu escolhi */
+}
+
+button {
+    background-color: blue; /* Troca a cor do fundo */
+    color: rgb(255, 255, 255);
+}
+
+
+img {
+    width: 300px; /* Em inglês significa largura */
+    height: auto; /* Em inglês significa altura */
+}
+
