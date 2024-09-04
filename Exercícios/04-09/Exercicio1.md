@@ -1,4 +1,4 @@
-# Exercício 1 = Hierarquia de Títulos
+# Exercício 1 - Hierarquia de Títulos
 
 ## Objetivo
 
