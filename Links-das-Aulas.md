@@ -1,6 +1,6 @@
 # Links das Aulas de FrontEnd
 
-Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará todos os links para as aulas que compõem o curso. Cada link leva a uma apresentação que você <b>deve<b> usar para estudar.
+Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará todos os links para as aulas que compõem o curso. Cada link leva a uma apresentação que você <b>deve</b> usar para estudar.
 
 ## Aula 1: Hierarquia de Títulos
 
