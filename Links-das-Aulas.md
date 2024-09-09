@@ -10,6 +10,9 @@ Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará
 
 - [Caracteres, parágrafos e quebras de linha](https://view.genially.com/64ff32ea48b6360011856a7f/presentation-caracteres-paragrafos-quebras-de-linha)
 
+## Aula 3: Formatação de Texto
+
+- [Formatação de texto](https://view.genially.com/6501df12dd65ae0011283dad/presentation-formatacao-de-texto)
 
 Fique atento às atualizações e adições de novos links à medida que avançamos no curso. Se você tiver alguma dúvida, não hesite em entrar em contato!
 
