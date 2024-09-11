@@ -14,7 +14,13 @@ Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará
 
 - [Formatação de texto](https://view.genially.com/6501df12dd65ae0011283dad/presentation-formatacao-de-texto)
 
+## Aula 4: Imagens e Favicons
+
+- [Imagens e Favicons](https://app.genially.com/editor/650088bc8873ce00182978c4)
+
 Fique atento às atualizações e adições de novos links à medida que avançamos no curso. Se você tiver alguma dúvida, não hesite em entrar em contato!
+
+
 
 ---
 
