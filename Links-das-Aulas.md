@@ -22,6 +22,9 @@ Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará
 
 - [Links](https://app.genially.com/editor/65087c10df57350011a9f9ce)
 
+## Aula 6: Listas
+
+- [Listas](https://app.genially.com/editor/6503316e3e07650011115a8e)
 
 Fique atento às atualizações e adições de novos links à medida que avançamos no curso. Se você tiver alguma dúvida, não hesite em entrar em contato!
 
