@@ -26,6 +26,14 @@ Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará
 
 - [Listas](https://app.genially.com/editor/6503316e3e07650011115a8e)
 
+## Aula 7: Introdução ao CSS
+
+- [Introdução ao CSS](https://app.genially.com/editor/6509e8f01d06e20019bf3306)
+
+## Aula 8: Seletores Personalizados (Classes e IDs)
+
+- [Seletores Personalizados (Classes e IDs)](https://app.genially.com/editor/65145b5d9ae4a400111ca5fe)
+
 Fique atento às atualizações e adições de novos links à medida que avançamos no curso. Se você tiver alguma dúvida, não hesite em entrar em contato!
 
 ---
