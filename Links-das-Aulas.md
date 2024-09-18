@@ -16,23 +16,23 @@ Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará
 
 ## Aula 4: Imagens e Favicons
 
-- [Imagens e Favicons](https://app.genially.com/editor/650088bc8873ce00182978c4)
+- [Imagens e Favicons](https://view.genially.com/650088bc8873ce00182978c4/presentation-imagens-e-favicons)
 
 ## Aula 5: Links
 
-- [Links](https://app.genially.com/editor/65087c10df57350011a9f9ce)
+- [Links](https://view.genially.com/65087c10df57350011a9f9ce/presentation-links)
 
 ## Aula 6: Listas
 
-- [Listas](https://app.genially.com/editor/6503316e3e07650011115a8e)
+- [Listas](https://view.genially.com/6503316e3e07650011115a8e/presentation-listas)
 
 ## Aula 7: Introdução ao CSS
 
-- [Introdução ao CSS](https://app.genially.com/editor/6509e8f01d06e20019bf3306)
+- [Introdução ao CSS](https://view.genially.com/6509e8f01d06e20019bf3306/presentation-css)
 
 ## Aula 8: Seletores Personalizados (Classes e IDs)
 
-- [Seletores Personalizados (Classes e IDs)](https://app.genially.com/editor/65145b5d9ae4a400111ca5fe)
+- [Seletores Personalizados (Classes e IDs)](https://view.genially.com/65145b5d9ae4a400111ca5fe/presentation-seletores-personalizados)
 
 Fique atento às atualizações e adições de novos links à medida que avançamos no curso. Se você tiver alguma dúvida, não hesite em entrar em contato!
 
