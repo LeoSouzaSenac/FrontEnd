@@ -34,6 +34,10 @@ Bem-vindo ao repositório de links das aulas de FrontEnd! Aqui você encontrará
 
 - [Seletores Personalizados (Classes e IDs)](https://view.genially.com/65145b5d9ae4a400111ca5fe/presentation-seletores-personalizados)
 
+## Aula 9: Flex Box (Display Flex)
+
+- [Flex Box (Display Flex)](https://view.genially.com/651af8a213b20f0011dedaca/presentation-flexbox)
+
 Fique atento às atualizações e adições de novos links à medida que avançamos no curso. Se você tiver alguma dúvida, não hesite em entrar em contato!
 
 ---
