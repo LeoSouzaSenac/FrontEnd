@@ -1,0 +1,18 @@
+p {
+    color: red;
+}
+
+div {
+    background-color: blueviolet;
+}
+
+div > p {
+    display: none;
+
+}
+
+div:hover > p {
+    display: block;
+    color: blue;
+    
+}

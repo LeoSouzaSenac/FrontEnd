@@ -1,0 +1,15 @@
+body {
+    background-color: lightgoldenrodyellow;
+    color: chocolate;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: brown;
+}
+
+a {
+    color: brown;
+    text-decoration: none; /* faz o sublinhado do link sumir*/
+}

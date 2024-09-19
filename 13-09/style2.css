@@ -1,0 +1,44 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+
+    color: white;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+img {
+   width: 300px;
+   height: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+

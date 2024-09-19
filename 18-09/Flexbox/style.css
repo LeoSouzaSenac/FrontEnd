@@ -1,0 +1,31 @@
+#pai {
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    flex-direction: row; /* Controla a direção dos elementos filhos  */
+    height: 300px;
+    justify-content: center; /* Controla a disposição/espaçamento dos filhos  */
+    /* start, end, center, space-around, space-evenly, space-between */
+    flex-wrap: wrap; /* Controla se os itens vão pular para a próxima linha */
+    /*wrap, nowrap, wrap-reverse*/
+    align-items: center; /* Alinha os filhos ao longo do eixo secundário */
+    gap: 10px;
+}
+
+.filho {
+    background-color: rgb(255, 155, 155);
+    padding: 20px;
+    
+    
+}
+
+#caixa1 {
+    flex-grow: 1;
+}
+
+#caixa2 {
+    flex-grow: 5;
+}
+
+#caixa3 {
+    flex-grow: 1;
+}

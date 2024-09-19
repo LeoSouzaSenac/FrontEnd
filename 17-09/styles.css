@@ -1,0 +1,18 @@
+/* Estilo para a caixa com ID */
+#caixa-unica {
+    background-color: #3498db;
+    color: white;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+/* Estilo para as caixas com classe */
+.caixa-multipla {
+    background-color: #e74c3c;
+    color: white;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+}

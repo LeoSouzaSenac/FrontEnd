@@ -1,0 +1,63 @@
+/* Estilos globais para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada no corpo da página */
+    color: #333; /* Define a cor do texto como cinza escuro */
+    background-color: #f4f4f4; /* Define a cor de fundo como um cinza claro */
+    margin: 0; /* Remove a margem padrão em torno da página */
+    padding: 0; /* Remove o preenchimento padrão em torno da página */
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: #4CAF50; /* Define a cor de fundo como verde */
+    color: white; /* Define a cor do texto como branca */
+    padding: 20px; /* Adiciona espaçamento interno (padding) de 20px ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Estilos para o texto destacado com a classe "texto-destaque" */
+.texto-destaque {
+    font-size: 18px; /* Define o tamanho da fonte como 18px */
+    font-weight: bold; /* Define o texto como negrito */
+    color: #e74c3c; /* Define a cor do texto como vermelho */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin: 20px 0; /* Adiciona margem superior e inferior de 20px */
+}
+
+/* Estilos para links (a) */
+a {
+    color: #3498db; /* Define a cor do link como azul */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilos para links ao passar o mouse (hover) */
+a:hover {
+    text-decoration: underline; /* Ao passar o mouse, adiciona o sublinhado */
+}
+
+/* Estilos para parágrafos (p) */
+p {
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 vezes o tamanho da fonte */
+    margin: 10px 20px; /* Define a margem superior e inferior de 10px, e nas laterais de 20px */
+}
+
+/* Estilos para imagens (img) */
+img {
+    display: block; /* Faz com que a imagem seja exibida como um bloco, quebrando a linha antes e depois */
+    max-width: 50%; /* Faz com que a imagem ocupe no máximo 100% da largura do seu container */
+    height: auto; /* Ajusta a altura proporcionalmente à largura da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border: 2px solid #ccc; /* Adiciona uma borda de 2px com cor cinza claro */
+    border-radius: 8px; /* Deixa os cantos da borda arredondados com um raio de 8px */
+}
+
+/* Estilos para o rodapé (footer) */
+footer {
+    background-color: #333; /* Define a cor de fundo como cinza escuro */
+    color: white; /* Define a cor do texto como branca */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px; /* Adiciona espaçamento interno de 10px ao redor do conteúdo */
+    position: relative; /* Define a posição como relativa (para que o rodapé se mova com a página) */
+    bottom: 0; /* Coloca o rodapé no fundo da página */
+}

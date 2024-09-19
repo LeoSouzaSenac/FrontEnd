@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com Botões</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Botões com Eventos</h1>
+
+    <!-- Botão que altera a cor do fundo -->
+    <button id="changeColorBtn">Alterar cor de fundo</button>
+
+    <!-- Botão que exibe um alerta -->
+    <button id="alertBtn">Exibir Alerta</button>
+
+    <!-- Botão que desabilita outro botão -->
+    <button id="disableBtn">Desabilitar o próximo botão</button>
+    <button id="toDisableBtn">Clique aqui (será desativado)</button>
+
+    <!-- Botão que muda o texto de um parágrafo -->
+    <button id="changeTextBtn">Mudar texto do parágrafo</button>
+    <p id="textParagraph">Este é um texto que será alterado.</p>
+
+    <!-- Botão que esconde um elemento -->
+    <button id="hideElementBtn">Esconder o parágrafo abaixo</button>
+    <p id="hideParagraph">Parágrafo para esconder.</p>
+
+    <!-- Botão que exibe a hora atual -->
+    <button id="showTimeBtn">Exibir hora atual</button>
+    <p id="timeParagraph"></p>
+
+    <!-- Botão para diminuir o tamanho da tela -->
+    <button id="shrinkScreenBtn">Diminuir tamanho da tela</button>
+
+    <!-- Botão com evento de clique com botão direito -->
+    <button id="rightClickBtn">Clique com botão direito</button>
+    <p id="rightClickParagraph">Clique com o botão direito para ver o efeito.</p>
+
+    <!-- Botão com evento de mouse out -->
+    <button id="mouseOutBtn">Passe o mouse e saia</button>
+    <p id="mouseOutParagraph">Passe o mouse sobre este botão e depois saia para ver o efeito.</p>
+
+    <script>
+        // Evento para alterar a cor de fundo
+        document.getElementById('changeColorBtn').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'lightblue';
+        });
+
+        // Evento para exibir um alerta
+        document.getElementById('alertBtn').addEventListener('click', function() {
+            alert('Este é um alerta!');
+        });
+
+        // Evento para desabilitar um botão
+        document.getElementById('disableBtn').addEventListener('click', function() {
+            document.getElementById('toDisableBtn').disabled = true;
+        });
+
+        // Evento para mudar o texto de um parágrafo
+        document.getElementById('changeTextBtn').addEventListener('click', function() {
+            document.getElementById('textParagraph').textContent = 'O texto foi alterado!';
+        });
+
+        // Evento para esconder um parágrafo
+        document.getElementById('hideElementBtn').addEventListener('click', function() {
+            document.getElementById('hideParagraph').style.display = 'none';
+        });
+
+        // Evento para exibir a hora atual
+        document.getElementById('showTimeBtn').addEventListener('click', function() {
+            const now = new Date();
+            document.getElementById('timeParagraph').textContent = 'Hora atual: ' + now.toLocaleTimeString();
+        });
+
+        // Evento para diminuir o tamanho da tela
+        document.getElementById('shrinkScreenBtn').addEventListener('click', function() {
+            window.resizeTo(800, 600);
+        });
+
+        // Evento de clique com o botão direito (contextmenu)
+        document.getElementById('rightClickBtn').addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Impede o menu de contexto padrão
+            document.getElementById('rightClickParagraph').textContent = 'Você clicou com o botão direito!';
+            return false;
+        });
+
+        // Evento de mouse out (quando o mouse sai de cima do botão)
+        document.getElementById('mouseOutBtn').addEventListener('mouseout', function() {
+            document.getElementById('mouseOutParagraph').textContent = 'Você saiu com o mouse do botão!';
+        });
+    </script>
+</body>
+</html>

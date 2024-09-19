@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: rgb(169, 25, 25);
+}
+
+h2:hover {
+    color: aqua;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(169, 25, 25);
+}
+
+button:hover {
+    background-color: rgb(216, 20, 20);
+}
+

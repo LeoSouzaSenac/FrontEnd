@@ -1,0 +1,49 @@
+
+
+
+
+
+/* Estilo para o container principal */
+#container-principal {
+    background-color: #f0f0f0; /* Define a cor do fundo */
+    padding: 20px; /* Espaço do lado de dentro */
+    height: 350px; /* Altura */
+    border: 2px solid #e61a1a; /* Adiciona borda */
+    border-radius: 10px; /* Define os cantos como arredondados */
+
+}
+
+
+/* Estilo para as caixas com a mesma classe */
+.caixa-simples {
+    background-color: #2ecc71;
+    color: white; /* Define a cor da letra */
+    width: 100px;  /* Largura */
+    height: 100px; /* Altura */
+    text-align: center; /* Define o alinhamento do texto */
+    line-height: 100px; /* Espaçamento das linhas */
+    border-radius: 5px; 
+    margin: 10px;
+}
+
+/* A pseudo classe 'hover' aplica um estilo quando eu passo o mouse por cima do elemento */
+.caixa-simples:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo para a caixa com o ID exclusivo */
+#caixa-diferente {
+    background-color: #9b59b6;
+    margin: 10px; /* Espaço do lado de fora */
+    color: white;
+    width: 100px; 
+    height: 100px;
+    text-align: center; /* Define o alinhamento do texto */
+    line-height: 100px; /*Espaçamento entre linhas do texto*/
+    border-radius: 10px;
+    
+}
+
+#caixa-diferente:hover{
+    background-color: #773791;
+}
