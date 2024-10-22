@@ -106,11 +106,50 @@ function draw() {
     // Desenha a comida na posição gerada aleatoriamente
     ctx.fillRect(food.x, food.y, box, box);
 
+
+    // Define a cor da borda do segmento
+    ctx.strokeStyle = 'white'; //strokeStyle = estilo de borda
+    
+    // Desenha a borda do segmento
+    ctx.strokeRect(food.x, food.y, box, box);
+
+
     // Captura a posição atual da cabeça da cobra
     let snakeX = snake[0].x; //pega a posição horizontal da cabeça do snake
     let snakeY = snake[0].y; //pega a posição vertical da cabeça do snake
 
 
+
+    // Atualiza a posição da cabeça da cobra com base na direção
+if (direction === 'LEFT') {
+    snakeX -= box; // Move para a esquerda
+} else if (direction === 'UP') {
+    snakeY -= box; // Move para cima
+} else if (direction === 'RIGHT') {
+    snakeX += box; // Move para a direita
+} else if (direction === 'DOWN') {
+    snakeY += box; // Move para baixo
+} 
+
+
+    // Verifica se a cabeça da cobra está na mesma posição que a comida
+    if (snakeX === food.x && snakeY === food.y) {
+        // Gera uma nova posição aleatória para a comida
+        food = {
+            x: Math.floor(Math.random() * 20) * box,
+            y: Math.floor(Math.random() * 20) * box
+        };
+    } else {
+        // Se a cobra não comeu, remove o último segmento (cauda)
+        snake.pop();
+    }
+
+    // Cria um novo objeto para a nova cabeça da cobra
+    const newHead = { x: snakeX, y: snakeY };
+
+    // Adiciona a nova cabeça da cobra ao início do array
+    snake.unshift(newHead);
+
 }
 
-draw()
+setInterval(draw, 150)
