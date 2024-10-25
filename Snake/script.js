@@ -19,9 +19,11 @@ let food = {
     y: Math.floor(Math.random() * 20) * box  // Coordenada Y da comida
 };
 
+let pontos = 0;
 
+let texto = document.getElementById("pontos");
 
-
+let dificuldade = 200;
 
 
 
@@ -134,6 +136,17 @@ if (direction === 'LEFT') {
 
     // Verifica se a cabeça da cobra está na mesma posição que a comida
     if (snakeX === food.x && snakeY === food.y) {
+
+        pontos ++;
+
+        texto.textContent = "Pontuação: " + pontos;
+
+        dificuldade -= 10;
+
+        clearInterval(game);
+
+        game = setInterval(draw, dificuldade);
+
         // Gera uma nova posição aleatória para a comida
         food = {
             x: Math.floor(Math.random() * 20) * box,
@@ -176,6 +189,6 @@ function collision(head, array) {
 }
     
 // Inicia o jogo chamando a função draw a cada 100 milissegundos
-const game = setInterval(draw, 200);
+let game = setInterval(draw, dificuldade);
 
  
