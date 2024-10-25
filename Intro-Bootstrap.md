@@ -1,7 +1,3 @@
-Aqui está um guia em Markdown com uma explicação mais calma e detalhada para ajudar seus alunos adolescentes a entender o básico do Bootstrap.
-
----
-
 # Introdução ao Bootstrap: Guia Passo a Passo
 
 ## O que é Bootstrap?
