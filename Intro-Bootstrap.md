@@ -236,6 +236,12 @@ Vamos adicionar uma barra de navegação para simular um menu.
 - **`nav-link`**: Classe que estiliza o link.
 - **`href="#"`**: O link redireciona o usuário para a seção de "Sobre" (aqui, é um exemplo e não possui uma URL real).
 
+
+## Para dar funcionalidade à página, adicione o link para o Javascript:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+```
 ---
 
 ## Conclusão
