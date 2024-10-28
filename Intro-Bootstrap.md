@@ -169,12 +169,72 @@ Vamos adicionar uma barra de navegação para simular um menu.
 
 ### Explicando o Código
 
-- **`navbar`**: Define uma barra de navegação.
-- **`navbar-expand-lg`**: A barra de navegação será expandida em telas grandes e colapsada em telas pequenas.
-- **`navbar-light bg-light`**: Estilo de cores claro para o fundo da navbar.
-- **`navbar-brand`**: O nome da marca ou título do site.
-- **`navbar-toggler`**: Botão para abrir e fechar o menu em telas pequenas.
-- **`navbar-nav`**: Lista de links no menu.
+#### `<nav class="navbar navbar-expand-lg navbar-light bg-light">`
+- **`<nav>`**: Define uma área de navegação para links principais do site.
+- **`navbar`**: Classe do Bootstrap que estiliza o `nav` como uma barra de navegação.
+- **`navbar-expand-lg`**: Define que a barra de navegação é expansível a partir do tamanho "lg" (grande). Em telas menores, a navegação será colapsada em um menu tipo hambúrguer.
+- **`navbar-light`**: Aplica um esquema de cores claro, tornando os textos escuros sobre o fundo claro.
+- **`bg-light`**: Define um fundo claro (light) para a barra de navegação, combinando com o estilo da `navbar-light`.
+
+---
+
+#### `<div class="container">`
+- **`container`**: Centraliza o conteúdo da barra de navegação, limitando a largura máxima para alinhar com o layout da página. É especialmente útil para garantir margens adequadas em diferentes tamanhos de tela.
+
+---
+
+#### `<a class="navbar-brand" href="#">Meu Site</a>`
+- **`<a>`**: Um link que aponta para a homepage do site.
+- **`navbar-brand`**: Classe que estiliza o nome da marca ou logotipo do site dentro da `navbar`. Em geral, essa é uma área onde o nome do site ou logotipo é destacado, tornando-o visualmente mais evidente.
+
+---
+
+#### `<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">`
+- **`<button>`**: Um botão HTML, aqui utilizado para abrir/fechar o menu em dispositivos móveis.
+- **`navbar-toggler`**: Classe do Bootstrap que estiliza o botão para ser um ícone de menu tipo hambúrguer em telas menores.
+- **`type="button"`**: Define o tipo de elemento como "button".
+- **`data-bs-toggle="collapse"`**: Um atributo Bootstrap que ativa/desativa o comportamento de colapso no menu.
+- **`data-bs-target="#navbarNav"`**: Define o elemento alvo para o colapso, referenciando o `id="navbarNav"`. Quando o botão é clicado, ele expande ou colapsa o menu `navbarNav`.
+
+---
+
+#### `<span class="navbar-toggler-icon"></span>`
+- **`<span>`**: Um elemento em linha que atua como contêiner para o ícone.
+- **`navbar-toggler-icon`**: Classe do Bootstrap que adiciona o ícone de hambúrguer (três linhas horizontais) para indicar o menu colapsado.
+
+---
+
+#### `<div class="collapse navbar-collapse" id="navbarNav">`
+- **`collapse`**: Classe Bootstrap que aplica o comportamento de colapso ao conteúdo. Quando o menu está em uma tela pequena, ele será escondido por padrão.
+- **`navbar-collapse`**: Define que o conteúdo é colapsável dentro da `navbar`, melhorando a responsividade.
+- **`id="navbarNav"`**: Um identificador único que permite que o botão de colapso (`data-bs-target="#navbarNav"`) saiba qual conteúdo expandir ou colapsar.
+
+---
+
+#### `<ul class="navbar-nav ms-auto">`
+- **`<ul>`**: Um elemento de lista não ordenada, que serve para agrupar itens de navegação (`<li>`).
+- **`navbar-nav`**: Classe do Bootstrap que estiliza a lista como uma seção de navegação da `navbar`, aplicando espaçamento e formatação adequados.
+- **`ms-auto`**: Classe Bootstrap que adiciona margem automática à esquerda, empurrando os itens de navegação para o lado direito da `navbar`.
+
+---
+
+#### `<li class="nav-item">`
+- **`<li>`**: Define um item de lista.
+- **`nav-item`**: Classe Bootstrap que estiliza o item como parte da `navbar`, aplicando o espaçamento e formatação corretos para os itens de navegação.
+
+---
+
+#### `<a class="nav-link active" href="#">Home</a>`
+- **`<a>`**: Link de navegação.
+- **`nav-link`**: Classe Bootstrap que estiliza o link dentro da barra de navegação, aplicando o espaçamento e a formatação apropriada para um item de menu.
+- **`active`**: Classe que indica o link ativo, aplicando um destaque visual para que o usuário saiba qual página está acessando.
+
+---
+
+#### `<li class="nav-item"> <a class="nav-link" href="#">Sobre</a> </li>`
+- **`nav-item`**: Estiliza o item de lista como um item de navegação.
+- **`nav-link`**: Classe que estiliza o link.
+- **`href="#"`**: O link redireciona o usuário para a seção de "Sobre" (aqui, é um exemplo e não possui uma URL real).
 
 ---
 
