@@ -111,7 +111,21 @@ Modais são janelas que surgem sobre o conteúdo da página, geralmente usadas p
 </div>
 ```
 
-## Explicação das Classes e Atributos
+### Explicação das Classes e Atributos
+
+- **type="button"**: Define o elemento como um botão. Isso assegura que o botão funcione corretamente em qualquer contexto HTML.
+
+- **class="btn btn-primary"**:
+  - **btn**: Aplica o estilo de botão básico do Bootstrap, com espaçamento, bordas, e estilos de texto.
+  - **btn-primary**: Aplica uma cor de destaque ao botão, geralmente azul por padrão em Bootstrap, indicando que é uma ação principal.
+
+- **data-bs-toggle="modal"**: 
+  - Indica que o botão acionará a abertura de um modal. Esse atributo Bootstrap facilita a ativação de modais sem a necessidade de JavaScript.
+
+- **data-bs-target="#meuModal"**: 
+  - Especifica o modal que será aberto ao clicar no botão, usando o valor do atributo `id` do modal (`meuModal`). 
+  - Este atributo conecta o botão ao modal específico que será exibido, garantindo que o conteúdo correto seja apresentado.
+
 
 ### `<div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">`
 - **modal**: Define que o elemento será um modal, que é uma janela de diálogo exibida sobre o conteúdo principal.
