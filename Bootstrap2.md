@@ -173,8 +173,7 @@ Modais são janelas que surgem sobre o conteúdo da página, geralmente usadas p
 ## Desafio da Aula
 
 1. Crie uma página com três cards alinhados horizontalmente. Cada card deve ter uma imagem, um título, um texto explicativo e um botão.
-2. Adicione um botão de alerta que, ao ser clicado, exibe um alerta no topo da página.
-3. Insira um botão que abra um modal com mais informações sobre o conteúdo de um dos cards.
+2. Insira um botão que abra um modal com mais informações sobre o conteúdo de um dos cards.
 
 ---
 
