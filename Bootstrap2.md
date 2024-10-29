@@ -111,6 +111,49 @@ Modais são janelas que surgem sobre o conteúdo da página, geralmente usadas p
 </div>
 ```
 
+## Explicação das Classes e Atributos
+
+### `<div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">`
+- **modal**: Define que o elemento será um modal, que é uma janela de diálogo exibida sobre o conteúdo principal.
+- **fade**: Adiciona uma animação de fade-in (desvanecimento) ao modal.
+- **id="meuModal"**: Um identificador único para o modal, necessário para referenciá-lo quando for chamado.
+- **tabindex="-1"**: Remove o modal da ordem de tabulação, impedindo que seja selecionado até estar visível.
+- **aria-labelledby="meuModalLabel"**: Indica que o título do modal está definido pelo elemento com o id `meuModalLabel`.
+- **aria-hidden="true"**: Define que o modal está oculto por padrão para leitores de tela e dispositivos de acessibilidade.
+
+### `<div class="modal-dialog">`
+- **modal-dialog**: Define a caixa de diálogo do modal, centralizando e dimensionando o conteúdo interno.
+
+### `<div class="modal-content">`
+- **modal-content**: Aplica o estilo principal do modal, com bordas, cores de fundo, e sombras.
+
+### `<div class="modal-header">`
+- **modal-header**: Define o cabeçalho do modal, geralmente incluindo o título e o botão para fechar o modal.
+
+### `<h5 class="modal-title" id="meuModalLabel">Título do Modal</h5>`
+- **modal-title**: Define o estilo do título do modal, aplicando tamanho e estilo de fonte apropriados.
+- **id="meuModalLabel"**: Um identificador que associa o título do modal ao atributo `aria-labelledby` da div principal.
+
+### `<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>`
+- **btn-close**: Um botão estilizado para fechar o modal, fornecido pelo Bootstrap.
+- **data-bs-dismiss="modal"**: Atributo que fecha o modal quando o botão é clicado.
+- **aria-label="Fechar"**: Texto alternativo para leitores de tela, indicando que o botão serve para fechar o modal.
+
+### `<div class="modal-body">`
+- **modal-body**: Área principal do modal onde o conteúdo (texto, imagens, formulários, etc.) é exibido.
+
+### `<div class="modal-footer">`
+- **modal-footer**: Área do rodapé do modal, onde geralmente são colocados botões de ação, como "Fechar" ou "Salvar".
+
+### `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>`
+- **btn**: Classe base de botão no Bootstrap, que aplica estilos de botão comuns.
+- **btn-secondary**: Estilo de botão secundário, com cor de fundo mais neutra.
+- **data-bs-dismiss="modal"**: Fecha o modal ao clicar no botão.
+
+### `<button type="button" class="btn btn-primary">Salvar mudanças</button>`
+- **btn-primary**: Classe de botão principal, normalmente estilizada com uma cor de destaque.
+
+
 ---
 
 ## Desafio da Aula
