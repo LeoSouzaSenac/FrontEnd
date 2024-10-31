@@ -1,0 +1,17 @@
+ /* Define uma altura fixa para a div do slide */
+ .carousel-item {
+    height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
+/* Força a imagem a ocupar o espaço da div, mantendo a proporção */
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Mantém a imagem proporcional, preenchendo a div */
+}
+
+/* Centraliza o conteúdo no meio do slide */
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
