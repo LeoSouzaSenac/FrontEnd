@@ -41,9 +41,8 @@ O objetivo deste exercício é criar um site responsivo utilizando o framework B
 4. Personalize os componentes conforme necessário para atender aos requisitos e ao design desejado.
 
 ## Elementos úteis
-Link para o CSS Bootstrap: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-Link para o Js Bootstrap: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+- [Link para o CSS Bootstrap](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css)
+- [Link para o JS Bootstrap](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js)
 
 **NÃO ESQUEÇA DE CONSULTAR O MEU GITHUB PARA MAIS EXEMPLOS!**
-
