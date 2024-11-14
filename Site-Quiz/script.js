@@ -1,8 +1,29 @@
+/*
+const pergunta1 = document.getElementById("pergunta1")
+const pergunta2 = document.getElementById("pergunta2")
+
+let perguntas = [pergunta1, pergunta2]
+*/
+
+
+let perguntaAtiva = 0;
+const questoes = document.querySelectorAll(".questao")
+
+function ativar() {
+    
+    questoes[perguntaAtiva].classList.toggle("ativa")
+    
+}
+
+
+
 function responder(correta) {
     if (correta) {
         // Avançar para a próxima pergunta
         
-       
+        questoes[perguntaAtiva].classList.remove("ativa")
+        perguntaAtiva += 1
+        ativar()
     } else {
         // Entrar no modo tela cheia e exibir imagem de erro
         setTimeout(() => {

@@ -10,26 +10,82 @@
 <body id="page2">
 
     <main>
-        <section class="pai" >
-            <h3 class="titulo filho" id="pergunta">Vlad III Draculea era <br>o nome verdadeiro de...?</h3>
+        <section class="pai questao ativa">
+            <h3 class="titulo filho pergunta" >Vlad III Draculea era <br>o nome verdadeiro de...?</h3>
             
             <div class="opcoes">
                 <button class="resposta" onclick="responder(false)">Frankenstein</button>
                 <button class="resposta" onclick="responder(false)">Barão Vermelho</button>
-                <button class="resposta">Conde Drácula</button>
+                <button class="resposta" onclick="responder(true)">Conde Drácula</button>
                 <button class="resposta" onclick="responder(false)">Sherlock Holmes</button>
                 <button class="resposta" onclick="responder(false)">Conde de Monte Cristo</button>
             </div>
             
             
         </section>
+
+        <section class="pai questao">
+            <h3 class="titulo filho pergunta" >Em que época os <br>lobisomens se transformam?</h3>
+            
+            <div class="opcoes">
+                <button class="resposta" onclick="responder(false)">Em sextas-feiras 13</button>
+                <button class="resposta" onclick="responder(false)">Durante o Halloween</button>
+                <button class="resposta" onclick="responder(false)">Toda noite, de madrugada</button>
+                <button class="resposta"  onclick="responder(true)">Em noites de lua cheia</button>
+                <button class="resposta" onclick="responder(false)">Quando eles bem entenderem</button>
+            </div>
+            
+            
+        </section>
+
+        <section class="pai questao">
+            <h3 class="titulo filho pergunta" >Qual era o objetivo <br>original de usar fantasias <br>nesta época?</h3>
+            
+            <div class="opcoes">
+                <button class="resposta" onclick="responder(false)">Celebrar boas colheitas 13</button>
+                <button class="resposta" onclick="responder(false)">Agradar aos deuses da natureza</button>
+                <button class="resposta" onclick="responder(false)">Promover casamentos</button>
+                <button class="resposta"  onclick="responder(false)">Assustar as pessoas</button>
+                <button class="resposta" onclick="responder(true)"> Afastar os maus espíritos</button>
+            </div>
+            
+        </section>
+
+        <section class="pai questao">
+                <h3 class="titulo filho pergunta">O que os druidas <br>costumavam fazer <br>durante este ritual?</h3>
+                
+                <div class="opcoes">
+                    <button class="resposta" onclick="responder(false)">Contar histórias</button>
+                    <button class="resposta" onclick="responder(false)">Ensinar aprendizes</button>
+                    <button class="resposta" onclick="responder(false)">Realizar casamentos</button>
+                    <button class="resposta"  onclick="responder(true)">Prever o futuro</button>
+                    <button class="resposta" onclick="responder(false)">Criar remédios</button>
+                </div>
+                
+                
+        </section>
+
+        <section class="pai questao">
+                <h3 class="titulo filho pergunta" >Qual era o nome <br>do antigo festival <br>celta que deu origem <br>ao Halloween?</h3>
+                
+                <div class="opcoes">
+                    <button class="resposta" onclick="responder(false)">Beltane</button>
+                    <button class="resposta" onclick="responder(false)">Ostara</button>
+                    <button class="resposta" onclick="responder(true)">Samhain</button>
+                    <button class="resposta"  onclick="responder(false)">Yule</button>
+                    <button class="resposta" onclick="responder(false)">Imbolc</button>
+                </div>
+                
+                
+        </section>
+        
         
     </main>
 
         <!-- Imagem de erro em tela cheia -->
         <div id="telaCheiaErro" class="tela-cheia">
-            <img src="img/jumpscare7.jpg" alt="Erro" id="imagemErro">
-            <audio id="somErro" src="audio/audio1.mp3"></audio>
+            <img src="img/1000_F_572929598_MHa8S3NEnJw7p9eJcgJVhcd8aUSqwVve.jpg" alt="Erro" id="imagemErro">
+            <audio id="somErro" src="audio/audio2.mp3"></audio>
         </div>
 
 
