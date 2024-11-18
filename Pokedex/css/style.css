@@ -1,0 +1,109 @@
+/* Importa a fonte "Oxanium" do Google Fonts */
+/*@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');*/
+
+
+
+/* Remove margens e preenchimentos padrão de todos os elementos */
+* {
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total do elemento */
+  font-family: 'Oxanium', cursive; /* Define a fonte como "Oxanium" com estilo cursivo */
+}
+
+/* Estiliza o corpo da página */
+body {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  background: linear-gradient(to bottom, #6ab7f5, #fff); /* Aplica um gradiente de azul (cima) para branco (baixo) */
+  min-height: 100vh; /* Garante que o corpo tenha no mínimo a altura da janela do navegador */
+}
+
+/* Estiliza a área principal */
+main {
+  display: inline-block; /* Faz com que o main ocupe apenas o espaço necessário */
+  margin-top: 2%; /* Adiciona um espaçamento no topo */
+  padding: 15px; /* Adiciona um preenchimento interno */
+  position: relative; /* Define a posição relativa para ajustar elementos filhos */
+}
+
+/* Define o tamanho máximo da "pokedex" */
+.pokedex {
+  width: 100%; /* Define a largura como 100% do contêiner pai */
+  max-width: 425px; /* Limita a largura máxima para 425px */
+}
+
+/* Posiciona a imagem do Pokémon */
+.imagem_pokemon {
+  position: absolute; /* Posiciona a imagem em relação ao contêiner pai */
+  bottom: 55%; /* Move a imagem 55% da parte inferior do contêiner */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-63%, 20%); /* Ajusta a posição com um deslocamento relativo */
+  height: 18%; /* Define a altura da imagem como 18% da altura do contêiner */
+}
+
+/* Estiliza a área que mostra os dados do Pokémon */
+.dados_pokemon {
+  position: absolute; /* Posiciona os dados em relação ao contêiner pai */
+  font-weight: 600; /* Define a fonte como semi-negrito */
+  color: #aaa; /* Define a cor do texto como cinza claro */
+  top: 54.5%; /* Define a posição superior como 54,5% */
+  right: 27%; /* Define a posição à direita como 27% */
+  font-size: clamp(8px, 5vw, 25px); /* Ajusta o tamanho da fonte entre 8px e 25px com base no tamanho da viewport */
+}
+
+/* Estiliza o nome do Pokémon */
+.nome_pokemon {
+  color: #3a444d; /* Define a cor do texto como cinza escuro */
+  text-transform: capitalize; /* Faz com que a primeira letra de cada palavra fique maiúscula */
+}
+
+/* Estiliza o formulário de busca */
+.formulario {
+  position: absolute; /* Posiciona o formulário em relação ao contêiner pai */
+  width: 65%; /* Define a largura como 65% do contêiner pai */
+  top: 65%; /* Define a posição superior como 65% */
+  left: 13.5%; /* Define a posição à esquerda como 13,5% */
+}
+
+/* Estiliza o campo de busca */
+.campo_busca {
+  width: 100%; /* Define a largura do campo como 100% do contêiner pai */
+  padding: 4%; /* Adiciona um preenchimento interno */
+  outline: none; /* Remove o contorno padrão ao clicar no campo */
+  border: 2px solid #333; /* Define uma borda de 2px com cor cinza escuro */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  font-weight: 600; /* Define o texto como semi-negrito */
+  color: #3a444d; /* Define a cor do texto como cinza escuro */
+  font-size: clamp(8px, 5vw, 1rem); /* Ajusta o tamanho da fonte entre 8px e 1rem */
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /* Adiciona um sombreamento 3D */
+}
+
+/* Estiliza a área dos botões */
+.botoes {
+  position: absolute; /* Posiciona os botões em relação ao contêiner pai */
+  bottom: 10%; /* Move os botões 10% para cima a partir da parte inferior */
+  left: 50%; /* Centraliza horizontalmente */
+  width: 65%; /* Define a largura como 65% do contêiner pai */
+  transform: translate(-57%, 0); /* Ajusta a posição horizontal com um deslocamento relativo */
+  display: flex; /* Usa o layout flexbox para organizar os botões */
+  gap: 20px; /* Define um espaçamento de 20px entre os botões */
+}
+
+/* Estiliza cada botão */
+.botao {
+  width: 50%; /* Define a largura de cada botão como 50% do contêiner pai */
+  padding: 4%; /* Adiciona um preenchimento interno */
+  border: 2px solid #000; /* Adiciona uma borda preta de 2px */
+  border-radius: 5px; /* Define cantos arredondados */
+  font-size: clamp(8px, 5vw, 1rem); /* Ajusta o tamanho da fonte entre 8px e 1rem */
+  font-weight: 600; /* Define o texto como semi-negrito */
+  color: white; /* Define a cor do texto como branca */
+  background-color: #444; /* Define o fundo do botão como cinza escuro */
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000; /* Adiciona sombreamento 3D */
+}
+
+/* Adiciona um efeito ao pressionar o botão */
+.botao:active {
+  box-shadow: inset -4px 4px 0 #222; /* Torna o sombreamento "inserido" ao clicar */
+  font-size: 0.9rem; /* Reduz ligeiramente o tamanho da fonte */
+}
