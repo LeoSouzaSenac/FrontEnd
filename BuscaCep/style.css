@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Faz a página ocupar toda a altura da tela */
+    flex-direction: column; /* Alinha os itens na vertical */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+}
+
+.cep-container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}

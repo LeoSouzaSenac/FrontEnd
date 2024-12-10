@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca por CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+
+</head>
+<body>
+
+    <h1>Buscar Endereço por CEP</h1>
+
+    <div class="cep-container">
+        <input type="text" id="cep" class="input-field" placeholder="Digite o CEP" maxlength="8">
+        <button class="button" onclick="buscarCep()">Buscar</button>
+
+        <div id="resultado" class="result" style="display: none;">
+            <p><strong>Logradouro:</strong> <span id="logradouro"></span></p>
+            <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+            <p><strong>Cidade:</strong> <span id="cidade"></span></p>
+            <p><strong>Estado:</strong> <span id="estado"></span></p>
+        </div>
+    </div>
+
+    <div id="map" style="height: 400px; width: 400px; display:none; margin-top: 25px;"></div>
+
+
+   <script src="script.js"></script>
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
