@@ -2,12 +2,16 @@
 
 Formulários HTML são usados para coletar informações dos usuários em uma página da web. Eles podem conter diversos tipos de campos como texto, e-mail, senha, caixas de seleção, botões e muito mais.
 
+---
+
 ## 🧱 Estrutura do Formulário
 
 Um formulário HTML é criado usando a tag `<form>`. Essa tag define a área da página que agrupa os campos de entrada do usuário. Nela também são definidos atributos como:
 
 - **`action`**: indica para onde os dados do formulário devem ser enviados (como um script PHP ou uma API).
 - **`method`**: define o método de envio dos dados, geralmente `GET` ou `POST`.
+
+---
 
 ## 🔡 Tipos de Campos
 
@@ -22,6 +26,8 @@ Dentro de um formulário, é possível adicionar diferentes tipos de campos, dep
 - **Botões de opção (radio)**: permitem apenas uma escolha entre várias opções.
 - **Listas suspensas (select)**: oferecem uma lista de opções a serem escolhidas.
 
+---
+
 ## 📚 Atributos Comuns
 
 Alguns atributos são frequentemente utilizados nos campos de formulários:
@@ -31,16 +37,20 @@ Alguns atributos são frequentemente utilizados nos campos de formulários:
 - **`required`**: torna o preenchimento obrigatório.
 - **`placeholder`**: mostra um texto de exemplo dentro do campo antes do usuário digitar.
 
+---
+
 ## ✅ Finalidade
 
 Os formulários são essenciais para interações como:
 
-- Cadastros e logins
-- Envio de mensagens e feedbacks
-- Pesquisas e votações
+- Cadastros e logins  
+- Envio de mensagens e feedbacks  
+- Pesquisas e votações  
 - Compras online (formulário de pagamento)
 
 Eles podem ser usados sozinhos, com linguagens como **PHP**, **JavaScript** ou integrados a **APIs**.
+
+---
 
 ## 💻 Exemplo Prático de Formulário HTML
 
@@ -86,21 +96,25 @@ Eles podem ser usados sozinhos, com linguagens como **PHP**, **JavaScript** ou i
   <!-- Botão de envio -->
   <button type="submit">Enviar</button>
 </form>
-´´´
+````
 
+---
 
 ## 🏷️ Explicação dos Principais Atributos de Campos em Formulários HTML
 
 Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`), podemos usar diversos atributos para controlar o comportamento e a validação desses campos.
 
+---
+
 ### 🔸 `name`
 
-- **Descrição**: Identifica o nome do campo que será usado no envio dos dados.
-- **Importância**: Fundamental para que os dados possam ser recuperados no backend (como no PHP, Node.js, etc.).
-- **Exemplo**:
+* **Descrição**: Identifica o nome do campo que será usado no envio dos dados.
+* **Importância**: Fundamental para que os dados possam ser recuperados no backend (como PHP, Node.js, etc.).
+* **Exemplo**:
+
   ```html
   <input type="text" name="usuario">
-````
+  ```
 
 ---
 
@@ -119,17 +133,9 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 ### 🔸 `type`
 
 * **Descrição**: Define o tipo de dado que o campo deve receber.
-
 * **Exemplos mais comuns**:
 
-  * `text` – texto comum
-  * `email` – e-mail com validação automática
-  * `password` – oculta os caracteres digitados
-  * `checkbox` – seleção múltipla
-  * `radio` – seleção única
-  * `number` – apenas números
-  * `submit` – botão de envio
-
+  * `text`, `email`, `password`, `checkbox`, `radio`, `number`, `submit`
 * **Exemplo**:
 
   ```html
@@ -141,7 +147,6 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 ### 🔸 `placeholder`
 
 * **Descrição**: Texto de exemplo que aparece dentro do campo antes do usuário digitar algo.
-* **Objetivo**: Ajuda o usuário a entender o que deve ser preenchido.
 * **Exemplo**:
 
   ```html
@@ -152,7 +157,7 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `required`
 
-* **Descrição**: Torna o campo obrigatório. O formulário não será enviado se estiver vazio.
+* **Descrição**: Torna o campo obrigatório.
 * **Exemplo**:
 
   ```html
@@ -174,7 +179,7 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `maxlength` e `minlength`
 
-* **Descrição**: Limitam o número máximo e mínimo de caracteres permitidos no campo.
+* **Descrição**: Limitam a quantidade de caracteres permitidos.
 * **Exemplo**:
 
   ```html
@@ -185,7 +190,7 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `checked`
 
-* **Descrição**: Usado em campos `checkbox` ou `radio` para deixar uma opção marcada por padrão.
+* **Descrição**: Marca um `checkbox` ou `radio` como selecionado por padrão.
 * **Exemplo**:
 
   ```html
@@ -196,7 +201,7 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `selected`
 
-* **Descrição**: Usado em `<option>` dentro de `<select>` para marcar a opção padrão.
+* **Descrição**: Marca uma `<option>` como selecionada por padrão.
 * **Exemplo**:
 
   ```html
@@ -207,7 +212,7 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `disabled`
 
-* **Descrição**: Desativa o campo, impedindo que o usuário interaja ou envie esse valor.
+* **Descrição**: Desativa o campo (não interativo e não enviado).
 * **Exemplo**:
 
   ```html
@@ -218,8 +223,8 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `readonly`
 
-* **Descrição**: O campo pode ser lido, mas não editado pelo usuário.
-* **Diferente de** `disabled`, porque o campo ainda é enviado no formulário.
+* **Descrição**: O campo pode ser lido, mas não editado.
+* **Diferente de** `disabled` pois ainda é enviado no formulário.
 * **Exemplo**:
 
   ```html
@@ -230,7 +235,7 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 ### 🔸 `multiple`
 
-* **Descrição**: Permite múltiplas seleções em `<select>` ou múltiplos arquivos em `<input type="file">`.
+* **Descrição**: Permite múltiplas seleções em `<select>` ou `<input type="file">`.
 * **Exemplo**:
 
   ```html
@@ -246,8 +251,10 @@ Ao criar campos em formulários HTML (como `<input>`, `<textarea>`, `<select>`),
 
 Usar corretamente os atributos dos campos melhora:
 
-* A **experiência do usuário**,
-* A **acessibilidade** da página,
-* A **validação** dos dados antes de enviá-los para o servidor.
+* A **experiência do usuário**
+* A **acessibilidade da página**
+* A **validação** dos dados antes de enviá-los ao servidor
+
+---
 
 
