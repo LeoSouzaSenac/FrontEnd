@@ -52,6 +52,23 @@ O `position` em CSS é usado para **controlar onde os elementos aparecem na pág
   </span>
 </div>
 ```
+---
+
+### Por que usamos `position: relative` no `<div>`?
+
+* O `position: relative` no `<div>` **define a referência para o posicionamento absoluto dos elementos filhos dentro dele**.
+* O `<span>` está com `position: absolute; top: -5px; right: -5px;`, ou seja, ele vai se posicionar **em relação ao elemento pai mais próximo que tenha `position` diferente de `static`**.
+* Se o `<div>` não tivesse `position: relative`, o `<span>` com `position: absolute` seria posicionado em relação ao **viewport** (a janela inteira do navegador) ou a outro ancestral com posição definida — o que faria o número `3` aparecer fora do lugar esperado.
+
+---
+
+### O que estamos fazendo aqui?
+
+* O `<div>` é o container da imagem do ícone (40x40 pixels).
+* Com `position: relative` nele, o `<span>` (o círculo vermelho com o número 3) fica **posicionado absolutamente em relação ao canto superior direito do `<div>`**, deslocado levemente para fora (top: -5px, right: -5px) para ficar em cima do ícone, como um contador ou badge.
+* Isso cria o efeito visual clássico de **"ícone com número de notificações"**.
+
+---
 
 ---
 
@@ -66,26 +83,24 @@ O `position` em CSS é usado para **controlar onde os elementos aparecem na pág
   * ✅ Ícones de fechar em modais
   * ✅ Legendas flutuantes
 
-#### 💻 Exemplo prático: menu dropdown
+---
 
-```html
-<div style="position: relative; display: inline-block;">
-  <button>Menu</button>
-  <ul style="
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    border: 1px solid #ccc;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    width: 150px;">
-    <li><a href="#">Opção 1</a></li>
-    <li><a href="#">Opção 2</a></li>
-  </ul>
-</div>
-```
+### Por que usamos `position: absolute` no `<span>`?
+
+* O `<span>` representa um **badge vermelho** com o número "3", geralmente usado para indicar notificações, contadores ou alertas sobre o ícone.
+* Com `position: absolute`, esse badge é **removido do fluxo normal** da página, ou seja:
+
+  * Ele **não ocupa espaço no layout**, não empurra outros elementos.
+  * Pode ser posicionado livremente dentro do container.
+* O container `<div>` tem `position: relative`, que é a **referência para o posicionamento absoluto** do `<span>`.
+* As propriedades `top: -5px; right: -5px;` fazem o badge ficar **no canto superior direito do ícone, ligeiramente "fora" da borda**, para dar aquele efeito visual clássico.
+
+---
+
+### O que aconteceria sem o `position: absolute`?
+
+* O `<span>` ficaria dentro do fluxo normal, empurrando o conteúdo ou ficando posicionado logo após a imagem, sem sobreposição.
+* Não seria possível posicionar o badge precisamente em cima do ícone.
 
 ---
 
@@ -118,19 +133,6 @@ O `position` em CSS é usado para **controlar onde os elementos aparecem na pág
 </style>
 
 <button class="botao-topo">↑</button>
-```
-
-🛠️ **Melhore com media query**:
-
-```css
-@media (max-width: 600px) {
-  .botao-topo {
-    bottom: 10px;
-    right: 10px;
-    padding: 10px;
-    font-size: 16px;
-  }
-}
 ```
 
 ---
