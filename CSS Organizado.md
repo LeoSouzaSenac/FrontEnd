@@ -310,3 +310,318 @@ table {
 ```
 
 ---
+
+## 📚 O que é o `base.css`?
+
+O arquivo `base.css` contém os **estilos globais básicos da aplicação** — aquelas definições que vão servir de base para todos os elementos do seu site.
+
+Ele fica logo após o `reset.css` (que "zera" os estilos padrões do navegador) e antes dos estilos mais específicos (layout, componentes, páginas).
+
+---
+
+## ✍️ O que colocar no `base.css`?
+
+### 1. Tipografia global
+
+Definir fontes, tamanhos, pesos e cores padrão para texto, títulos, links.
+
+```css
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+```
+
+---
+
+### 2. Estilos para elementos básicos
+
+Configurar aparência de tags comuns, como:
+
+* Parágrafos `<p>`
+* Títulos `<h1>`, `<h2>`, ..., `<h6>`
+* Links `<a>`
+* Listas `<ul>`, `<ol>`, `<li>`
+* Imagens `<img>`
+
+Exemplo:
+
+```css
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 1em;
+}
+```
+
+---
+
+### 3. Definições de cores e variáveis CSS (se usar)
+
+Se usar CSS custom properties, pode definir cores base, por exemplo:
+
+```css
+:root {
+  --cor-primaria: #ff6600;
+  --cor-secundaria: #333333;
+  --cor-fundo: #f5f5f5;
+  --font-base: 'Arial', sans-serif;
+}
+```
+
+---
+
+### 4. Estilos para formulários básicos
+
+Inputs, botões, labels, etc.
+
+```css
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: 1em;
+  margin: 0;
+}
+```
+
+---
+
+### 5. Pequenas regras para melhorar acessibilidade e usabilidade
+
+```css
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+---
+
+## 💡 Resumo rápido
+
+| O que vai no `base.css`          | Por quê?                         |
+| -------------------------------- | -------------------------------- |
+| Tipografia geral (fontes, cores) | Para padronizar texto            |
+| Estilos para tags HTML comuns    | Para ter aparência consistente   |
+| Variáveis CSS (cores, fontes)    | Facilita manutenção              |
+| Estilos básicos de formulário    | Uniformizar inputs e botões      |
+| Melhorias de usabilidade         | Melhora a experiência do usuário |
+
+---
+
+
+## 🧱 `layout.css` — Estilos estruturais da página
+
+### 📌 O que é?
+
+Esse arquivo define o **esqueleto geral do site**, ou seja, como os blocos maiores se organizam: `header`, `footer`, `main`, `container`, `sidebar`, etc.
+
+### ✅ O que normalmente vai aqui:
+
+* Tamanhos e posicionamento de containers
+* Definição de `header`, `main`, `footer`, `section`
+* Layout com `flexbox` ou `grid`
+* Espaçamentos entre as grandes seções
+
+### 🧪 Exemplo:
+
+```css
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+footer {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+```
+
+---
+
+## 🧩 `components.css` — Estilos de componentes reutilizáveis
+
+### 📌 O que é?
+
+Aqui ficam **peças pequenas e reutilizáveis** da interface, como botões, cards, formulários, campos de input, alertas, menus, etc.
+
+### ✅ O que normalmente vai aqui:
+
+* `.btn` (botão padrão)
+* `.card` (caixa de conteúdo com sombra)
+* `.form-control`, `.input-group`
+* `.menu`, `.badge`, `.alert`, etc.
+
+### 🧪 Exemplo:
+
+```css
+.btn {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc5200;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+```
+
+---
+
+## 🏠 `pages/home.css` — Estilos específicos da página inicial
+
+### 📌 O que é?
+
+Esse arquivo serve para guardar estilos **exclusivos da página inicial** (`index.html`), que não fazem sentido em outras páginas.
+
+### ✅ O que normalmente vai aqui:
+
+* Banner da página inicial
+* Destaques ou seções exclusivas da home
+* Layouts ou estilos de promoções e sliders
+
+### 🧪 Exemplo:
+
+```css
+.banner-home {
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.destaque-home {
+  margin-top: 40px;
+  text-align: center;
+}
+```
+
+---
+
+## 📞 `pages/contato.css` — Estilos específicos da página de contato
+
+### 📌 O que é?
+
+Aqui você coloca tudo que for **exclusivo da página de contato**, como o formulário, mapa, título da seção, etc.
+
+### ✅ O que normalmente vai aqui:
+
+* Formulário de contato (inputs, textarea, botão)
+* Estilo para o mapa
+* Layout da seção de contato
+
+### 🧪 Exemplo:
+
+```css
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form-contato button {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+```
+
+---
+
+## 🧠 `main.css` — Arquivo principal que importa todos os outros
+
+### 📌 O que é?
+
+Esse arquivo **não contém estilos diretos**. Ele serve apenas para **importar os outros arquivos CSS em ordem**, como se fosse o "gerente" dos estilos do site.
+
+### ✅ O que normalmente vai aqui:
+
+```css
+@import 'reset.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'components.css';
+@import 'pages/home.css';
+@import 'pages/contato.css';
+```
+
+Esse arquivo deve ser o **único linkado no seu HTML**:
+
+```html
+<link rel="stylesheet" href="css/main.css">
+```
+
+---
+
+## ✅ Resumo final
+
+| Arquivo             | Serve para...                                    |
+| ------------------- | ------------------------------------------------ |
+| `layout.css`        | Estrutura geral do site (header, footer, etc.)   |
+| `components.css`    | Peças reutilizáveis (botões, cards, formulários) |
+| `pages/home.css`    | Estilos exclusivos da página inicial             |
+| `pages/contato.css` | Estilos exclusivos da página de contato          |
+| `main.css`          | Importa e organiza todos os arquivos acima       |
+
+---
+
