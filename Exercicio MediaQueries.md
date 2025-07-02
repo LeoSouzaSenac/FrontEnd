@@ -58,16 +58,16 @@ Implemente os seguintes comportamentos com **Flexbox** e **Media Queries**:
 
 > **Estes itens são obrigatórios e fazem parte da avaliação do exercício.**
 
-✅ Uso de **CSS externo** (arquivo separado chamado `style.css`)
-✅ Importar e usar **uma fonte do Google Fonts** no projeto
-✅ Aplicar um **favicon** na aba do navegador
-✅ Utilizar **tags semânticas HTML5**, incluindo obrigatoriamente:
+-✅ Uso de **CSS externo** (arquivo separado chamado `style.css`)
+-✅ Importar e usar **uma fonte do Google Fonts** no projeto
+-✅ Aplicar um **favicon** na aba do navegador
+-✅ Utilizar **tags semânticas HTML5**, incluindo obrigatoriamente:
     ✔️ `<header>`
     ✔️ `<main>`
     ✔️ `<footer>`
-✅ Aplicar **uso correto de cores** para contraste e legibilidade
-✅ Usar Flexbox para layout: `display: flex`, `flex-direction`, `gap`, `justify-content`, `align-items`, etc.
-✅ Criar **Media Queries** para diferentes tamanhos de tela conforme descrito
+-✅ Aplicar **uso correto de cores** para contraste e legibilidade
+-✅ Usar Flexbox para layout: `display: flex`, `flex-direction`, `gap`, `justify-content`, `align-items`, etc.
+-✅ Criar **Media Queries** para diferentes tamanhos de tela conforme descrito
 
 ---
 
