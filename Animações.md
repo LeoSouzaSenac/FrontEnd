@@ -248,6 +248,77 @@ As animações em CSS deixam sua interface mais interativa e moderna, sem a nece
 
 ---
 
+## ✅ **Resumo rápido:**
+
+| Situação                                                     | Use `transition` quando... | Use `@keyframes` quando... |
+| ------------------------------------------------------------ | -------------------------- | -------------------------- |
+| ✅ Animação simples entre dois estados (ex: hover)            | ✔️                         | ❌                          |
+| ✅ Você quer uma animação contínua (ex: loading)              | ❌                          | ✔️                         |
+| ✅ Precisa de múltiplas etapas (ex: ir e voltar, ou "bounce") | ❌                          | ✔️                         |
+| ✅ Quer animar com eventos simples (hover, focus, etc.)       | ✔️                         | ❌                          |
+| ✅ Animação deve rodar sozinha ou infinitamente               | ❌                          | ✔️                         |
+
+---
+
+## 🧩 **Diferenças com exemplos**
+
+### 📌 `transition`: muda de um estado para outro
+
+Funciona apenas quando um **estado muda** (como `hover`, `focus`, `click`, `classList.toggle()` no JS...).
+
+```css
+.caixa {
+  background-color: blue;
+  transition: background-color 0.5s ease;
+}
+.caixa:hover {
+  background-color: red;
+}
+```
+
+* **✅ Simples e leve**
+* **❌ Só funciona quando algo muda**
+
+---
+
+### 📌 `@keyframes`: define **etapas personalizadas** da animação
+
+Útil para fazer animações mais elaboradas, com controle total do início, meio e fim.
+
+```css
+@keyframes mover {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.caixa {
+  animation: mover 2s ease-in-out infinite;
+}
+```
+
+* **✅ Pode rodar automaticamente**
+* **✅ Aceita várias etapas**
+* **✅ Funciona até sem interação do usuário**
+* **✅ Ideal para loops e efeitos contínuos**
+* **❌ Mais verboso que `transition`**
+
+---
+
+## 🧠 Quando escolher cada um?
+
+| Desejo fazer...                     | Melhor escolha                               |
+| ----------------------------------- | -------------------------------------------- |
+| Animação ao passar o mouse          | `transition`                                 |
+| Efeito que se repete infinitamente  | `@keyframes`                                 |
+| Simulação de digitação              | `@keyframes`                                 |
+| Botão que muda de cor ao clicar     | `transition`                                 |
+| Círculo girando (loading)           | `@keyframes`                                 |
+| Movimento com "vai e volta"         | `@keyframes`                                 |
+| Sumir/aparecer suavemente ao clicar | `transition` (ou `@keyframes` com `opacity`) |
+
+---
+
 ## 📌 Dicas Finais
 
 * Use `transition` para **mudanças simples** (hover, click, focus).
