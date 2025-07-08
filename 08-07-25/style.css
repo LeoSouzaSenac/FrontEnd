@@ -1,0 +1,101 @@
+/* Zera o espaçamento interno (padding), externo (margin) e define a box-sizing como border-box
+   Isso garante que o padding e a borda sejam incluídos na largura e altura dos elementos */
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define a fonte padrão da página como Arial ou uma fonte sans-serif */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estiliza o cabeçalho (header):
+     - Fundo preto
+     - Texto branco
+     - Layout em linha (flexbox), com espaçamento entre os itens
+     - Centraliza os itens verticalmente
+     - Adiciona um espaçamento interno (padding)
+     - Permite que os itens quebrem linha se necessário (wrap) */
+  header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+  
+  /* Estiliza os links dentro do header:
+     - Texto branco
+     - Remove o sublinhado
+     - Margem ao redor para separação */
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  /* Ícone do menu ("hamburger") que só aparece no mobile:
+     - Inicialmente oculto */
+     
+  .show {
+    display: none;
+  }
+  
+  /* Estiliza o menu de navegação (nav):
+     - Mostra os itens em linha (horizontalmente)
+     - Espaçamento entre os itens
+     - Adiciona transição suave para as propriedades max-height e opacity */
+  nav {
+    display: flex;
+    gap: 10px;
+    transition: max-height 0.5s ease, opacity 0.5 ease; /* OBS: falta 's' em '0.5 ease', corrigido abaixo */
+  }
+  
+  /* MEDIA QUERY: Aplica estilos somente quando a largura da tela for até 1125px */
+  @media (max-width: 1125px) {
+  
+    /* Altera a direção do header para coluna (um item abaixo do outro)
+       Adiciona espaçamento vertical entre os elementos */
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Agora o ícone do menu é exibido em dispositivos móveis */
+    .show {
+      display: flex;
+    }
+  
+    /* Menu de navegação no mobile:
+       - Mostra os itens em coluna (verticalmente)
+       - Centraliza os itens
+       - Largura total da tela
+       - Inicialmente oculto (max-height 0 e opacity 0)
+       - Transição suave para a exibição do menu */
+    nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-height: 0;
+      opacity: 0;
+  
+      /* Transição suave:
+         Quando max-height ou opacity forem alteradas (via classe, clique, etc.),
+         a mudança será animada por 0.5s com curva "ease" */
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+  
+    /* Quando a classe 'ativo' for adicionada ao nav (fazemos isso por JS),
+       o menu é exibido:
+       - Altura máxima suficiente para mostrar os itens
+       - Opacidade total */
+    nav.ativo {
+      max-height: 500px; /* valor ajustável conforme o conteúdo do menu */
+      opacity: 1;
+    }
+  }
+  
