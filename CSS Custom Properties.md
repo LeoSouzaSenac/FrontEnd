@@ -51,23 +51,6 @@ O seletor `:root` representa o elemento raiz do documento HTML — ou seja, o `<
 }
 ```
 
-É equivalente a:
-
-```css
-html {
-  --cor-fundo: #ffffff;
-}
-```
-
-### 🔍 Mas qual a diferença?
-
-| Seletor | Especificidade |
-| ------- | -------------- |
-| `html`  | 0,0,0,1        |
-| `:root` | 0,0,1,0        |
-
-➡️ `:root` tem **maior especificidade**, então é o preferido para definir **variáveis globais** que você quer ter certeza de que prevalecem.
-
 ---
 
 ## 🧩 Vantagens de usar Custom Properties
