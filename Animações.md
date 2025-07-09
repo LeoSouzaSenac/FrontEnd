@@ -444,6 +444,155 @@ boxes.forEach(box => {
 
 Com isso, suas animações só serão ativadas **quando o usuário realmente ver os elementos na tela**, deixando seu site mais profissional e fluido. 🚀
 
+---
+
+# ✨ AOS (Animate On Scroll)
+
+## 📌 O que é o AOS?
+
+AOS (Animate On Scroll) é uma biblioteca leve de JavaScript que permite adicionar **animações em elementos HTML quando eles entram na tela** ao rolar a página.
+
+Ela é ideal para deixar seu site mais dinâmico, responsivo e visualmente agradável, sem a necessidade de escrever JavaScript para detectar o scroll.
+
+---
+
+## ✅ Principais vantagens
+
+- Sem escrever JS para animações simples
+- Fácil de integrar com HTML e CSS
+- Diversos efeitos prontos como fade, slide, zoom, flip etc.
+- Personalizável (tempo, delay, repetir ou não)
+
+---
+
+## 📦 Como Usar o AOS (Passo a Passo)
+
+### 1. Adicione os arquivos da biblioteca no seu HTML
+
+No `<head>`, adicione o **CSS**:
+
+```html
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+````
+
+Antes de fechar o `</body>`, adicione o **JavaScript**:
+
+```html
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init(); // Inicializa a biblioteca
+</script>
+```
+
+---
+
+### 2. Adicione o atributo `data-aos` nos elementos HTML
+
+Use o atributo `data-aos` para definir o tipo de animação desejada:
+
+```html
+<div data-aos="fade-up">
+  Este conteúdo aparece com efeito de fade para cima!
+</div>
+```
+
+---
+
+### 3. Personalize com CSS (opcional)
+
+O AOS não altera o estilo do elemento, apenas aplica a animação:
+
+```css
+div {
+  padding: 20px;
+  background: lightblue;
+  margin: 50px 0;
+  border-radius: 10px;
+}
+```
+
+---
+
+## ✨ Tipos de animações disponíveis
+
+Você pode usar vários valores no atributo `data-aos`:
+
+| Tipo de animação | Exemplo de uso           |
+| ---------------- | ------------------------ |
+| Fade             | `data-aos="fade"`        |
+| Fade Up          | `data-aos="fade-up"`     |
+| Fade Down        | `data-aos="fade-down"`   |
+| Slide Left       | `data-aos="slide-left"`  |
+| Slide Right      | `data-aos="slide-right"` |
+| Zoom In          | `data-aos="zoom-in"`     |
+| Flip Left        | `data-aos="flip-left"`   |
+
+---
+
+## ⚙️ Personalização com atributos extras
+
+Você pode controlar o comportamento da animação:
+
+```html
+<div 
+  data-aos="fade-up"
+  data-aos-duration="1000"     <!-- duração em ms -->
+  data-aos-delay="300"         <!-- atraso para começar -->
+  data-aos-once="true"         <!-- anima só 1 vez -->
+>
+  Elemento com animação personalizada
+</div>
+```
+
+---
+
+## 🧪 Exemplo Completo
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo AOS</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    .box {
+      background: coral;
+      padding: 40px;
+      margin: 100px 0;
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" data-aos="fade-up">Box 1</div>
+  <div class="box" data-aos="zoom-in">Box 2</div>
+  <div class="box" data-aos="flip-left" data-aos-delay="500">Box 3</div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+```
+
+---
+
+## 🧠 Dica final
+
+Use o AOS quando quiser **animar elementos conforme o usuário rola a página**, sem precisar escrever lógica de scroll manual com JavaScript.
+
+---
+
+## 🔗 Documentação oficial
+
+Site do AOS: [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
+
 
 
 
